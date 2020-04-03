@@ -1,0 +1,1207 @@
+/**-----------------------------------------------------------------------------------------*/
+/*set default pages*/
+/**-----------------------------------------------------------------------------------------*/
+body{
+	margin: 0;
+	background-color: #f2f2f2;
+	 position: relative;
+}
+.profile-page{
+	width: 960px;
+	margin: 0 auto;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Header settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+header{
+	width: 100%;
+	height: 2.5em;
+	background-color:#bf4080; 			
+	margin: 0;
+}
+h1{
+	font-family:'Bahnschrift Condensed';
+	font-size: 2em;
+	margin-bottom:0;
+	margin-top:0;
+	text-align:center;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Header settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+header nav{
+	width: 960px;
+	margin: 0 auto;
+}
+header nav img{
+	padding: 0.5% 0 0.5% 0;
+}
+nav{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
+}
+nav img{
+	float: left;
+	display: block;
+}
+form{
+	float: right;
+	width: 75%;
+}
+input[type=text]{
+	float: left;
+	margin-left:150px;
+	padding: .7em 1%;
+	border: 1px solid #faeaf5;
+	border-radius: 6px;
+	box-sizing: border-box;
+	width: 69%;
+	margin-top:2px;
+	display: block;
+	cursor: pointer;
+}
+.button-search{
+	background-color:#bf4080;
+	width: 10%;
+	float: right;
+	color: white;
+	padding: .4em .8% 0em 0%;
+	border: none;
+}
+.menu-dropdown{
+	float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-family:'Bahnschrift Condensed';
+  padding: 1em 4%;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.menu-dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.menu-dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+.menu-dropdown i.material-icons{
+	padding: .55em;
+	text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Profile-profile setting/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.aside-profile{
+  float: left;
+  margin-top: .5em;
+  width: 30%;
+  height: 426px;
+  padding-top: 2em;
+  background-color:white ;
+  border-radius: .4em;
+}
+.containerImg{
+	width: 288px;
+	height: 288px;
+}
+.aside-profile h1{
+	font-family:'Bahnschrift Condensed';
+	margin:0;	
+	color: #bf4080;
+	clear: both;
+	padding-top:.5em;
+	padding-bottom: .4em;
+	font-size: 2em;
+	text-align: center;
+}
+.aside-profile ul{
+	font-family:'Bahnschrift Condensed';
+	background-color:#bf4080;  
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+	padding: 1em;
+}
+.aside-profile ul li{
+	display: inline;
+	padding:0;
+}
+.aside-profile ul a{	
+	text-decoration: none;
+	color: white;
+}
+.profile-notification, .profile-friends{	
+	padding-left: 15%;
+}
+.profile-notification .material-icons, .profile-friends .material-icons,
+ .profile-profile-link .material-icons{
+	font-size: 1.8em;	
+}
+#imgContainer {
+	width: 100%;
+	text-align: center;
+}
+p-title{
+	padding-top:20px;
+}
+.user-container {
+	display: inline-block;
+	height: 40%;
+	position: relative;
+	background-color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 15em;
+
+}
+.user-container img {
+	border-radius: 15em;
+	outline: medium none;
+	vertical-align: middle;
+	width: 100%;
+}
+.user-container div {
+	float: left;
+}
+
+.user-container:hover  .image{
+	  opacity: 0.8;
+}
+
+.containerImg:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: #cc0052;
+  border:0px solid #cc0052;
+  color: white;
+  border-radius: .8em;
+  font-size: 1em;
+  padding: 1em 16%;
+
+}
+
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 10;
+	left:0;
+	z-index: 2;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modal-contents2 {
+	min-height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+	border: .5px solid #f2f2f2;  
+}
+.modal-contents2 form{
+	width: 100%;
+	align-content: center;
+		clear: both;
+			margin-top: 1em;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	clear:both;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}
+}
+/*
+.text {
+	background-size: cover;
+	height: 420px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*/
+#blah{
+	border-radius: 15em;
+	max-height: 350px;
+    max-width: 390px;
+}
+#blah{
+	height: 288px;
+    width: 288px;
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 80%;
+  display:none;
+}
+
+[type="file"] + label {
+	  background: #f0c1e1;
+	  border: none;
+	  border-radius: 5px;
+	  color: #fff;
+	  cursor: pointer;
+	  display: block;
+	  font-family: 'Bahnschrift Condensed';
+	  font-size: inherit;
+	  font-weight: 600;
+	  width: 50%;
+  	  margin: 1em auto;
+	  outline: none;
+	  padding: 1rem 50px;
+	  position: relative;
+	  transition: all 0.3s;
+	  vertical-align: middle;
+ 
+	&:hover {
+    background-color: darken(#f15d22, 10%);
+  }
+  
+  &.btn-3 {
+    background-color: #f79159;
+    box-shadow: 0 6px darken(#f79159, 10%);
+    transition: none;
+
+    &:hover {
+      box-shadow: 0 4px darken(#f79159, 10%);
+      top: 2px;
+    }
+  }
+
+}
+
+.button {
+	background-color: #bf4080;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+	&:hover {
+		background-color: white;
+		color: $blue;
+		border: 2px solid #bf4080;
+	}
+	 &:hover {
+      background-color: darken(#ee6d9e, 30%);
+      
+      span {
+        transform: translateY(300%);
+      }
+        
+      &::before {
+        top: 0;
+      }
+}
+}
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Profile- intro settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.article-profile {
+	float: right;
+	border-radius: .4em;
+	margin-top: .5em;
+	width: 69%;
+	height: 426px;
+	padding-top: 2em;
+	background: white;
+	 
+}
+
+.article-profile h1{
+	font-family:'Bahnschrift Condensed';
+	margin:0;	
+	float:left;
+	color: #bf4080;
+	clear: both;
+	padding:.5em;
+	font-size: 2em;
+	text-align: center;
+}
+.article-profile p {
+	font-family:'Bahnschrift Condensed';
+	margin:0;	
+	color:  #666666	;
+	clear: both;
+	padding:.56em;
+	font-size: 2em;
+	text-align: center;
+	clear: both;
+	position: relative;	
+}
+
+.article-profile table{
+	clear:both;
+	font-family:'Bahnschrift Condensed';
+  	border-collapse: collapse;
+  	margin: 2em;
+  	width: 90%;
+}
+
+.article-profile th {
+	font-family:'Bahnschrift Condensed';
+	color:#b3b3b3;
+	list-style-type: none;	
+	margin: 0;
+	text-align: center;
+	padding: 1.2em;
+	clear: both;
+}
+
+.article-profile td {
+	font-family:'Bahnschrift Condensed';
+	list-style-type: none;	
+	margin: 0;
+	font-size: 1.5em;
+	text-align: center;
+	padding:0 1.4em;
+	border: none;
+}
+.article-profile td{	
+	text-decoration: none;
+	color: #bf4080;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Testemonial-feed settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.aside-feed{
+  clear: both;
+  margin-top: .5em;
+  float: left;
+  width: 30%;
+  background: white ;
+  border-radius: .4em;
+}
+.btn-com{
+	width: 80px;
+	height: 30px;
+	background-color: #282828;
+	border: none;
+	color: #fff;
+	font-family: arial;
+	font-weight: 400;
+	cursor:pointer;
+	margin-bottom: 6px;
+}
+.aside-feed h1{
+	font-family:'Bahnschrift Condensed';
+	margin:0;	
+	color: #bf4080;
+	clear: both;
+	padding-top:.5em;
+	padding-bottom: .4em;
+	font-size: 2em;
+	text-align: center;
+}
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container{
+	  border-bottom : 1px solid #b3b3b3;
+	  background-color: white;
+	  padding: 1em;
+	  margin: .5em .2em;
+	  clear: both;
+	  position: relative;
+}
+.container-testimonial form{
+	width: 100%;
+}
+.container-testimonial textarea{
+	border-radius: .5em ; 
+	width: 97%;
+	margin:1px auto;
+	background-color: white;
+	resize: none;
+	padding: 1em;
+	border: .5px solid #b3b3b3;
+	font-family:'Bahnschrift Condensed';
+}
+
+.button-testimonial{
+	width: 80px;
+	height: 30px;
+	margin: .5em;
+	font-family:'Bahnschrift Condensed';
+	text-decoration: none;
+	color: white;
+	background:#bf4080; 
+	padding: 0 10% 0 10%;
+	text-align: center;
+	clear: both;
+	border-radius: 1em;
+	border: 1px solid #bf4080 ;
+}
+
+.container p{
+	font-family:'Bahnschrift Condensed';
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+.edit-form {
+	position: absolute;
+	top: 0px;
+	right:10px;
+	width: 10%;
+}
+
+.edit-form button{
+	width: 40px;
+	height: 10px;
+	text-decoration: none;
+	color: #808080;
+	background: transparent;
+	opacity: 0.7;
+	border: none;
+}
+.edit-form button:hover{
+	opacity: 01;
+}
+.delete-form {
+	position: absolute;
+	top: 0px;
+	right:20px;
+	width: 15%;
+	float: right;
+}
+
+.delete-form button{
+	width: 40px;
+	border: none;
+	height: 10px;
+	color: #808080;
+	background-color: transparent;
+	opacity: 0.7;
+}
+.delete-form button:hover{
+	opacity: 01;
+}
+.button-comment{
+	width: 100px;
+	height: 30px;
+	margin: 1em;
+	font-family:'Bahnschrift Condensed';
+	text-decoration: none;
+	color: white;
+	background:#bf4080; 
+	padding: 0 5% 0 3%;
+	text-align: center;
+	clear: both;
+	border-radius: 1em;
+	border: 1px solid #bf4080 ;
+}
+.img-post-testimonial{
+    border-radius: 15em;
+    outline: medium none;
+    vertical-align: middle;
+    width: 15%;
+    float: left;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Album-feed settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.article-album{
+  float: right;
+  width: 69%;
+   margin-top: .5em;
+  background: white/*#e6e6e6 */;
+  border-radius: .4em;
+}
+#user-post{
+	width: 100%;
+	height:60px;
+	margin-left: 1em;
+}
+
+#album-comment-user {
+	font-family:'Bahnschrift Condensed';
+	font-size: 1.2em;
+	text-decoration:none;		 
+	border-bottom: 1px solid  #ffe6f0;
+	color:black;
+	margin-left:2em;
+}
+#MyComment{
+	display: none;
+}
+.img-post-gallery{
+	border-radius: 15em;
+	outline: medium none;
+	vertical-align: middle;
+	width: 7%;
+	float: left;
+}
+.comment-time{
+	font-family:'Bahnschrift Condensed';
+	font-size: 0.5em;
+	margin:0;
+}
+.comment-name{
+	font-family:'Bahnschrift Condensed';
+	font-size: 1.1em;
+	width: 100%;
+	margin:0;
+}
+.comment-message{
+	font-family:'Bahnschrift Condensed';
+	font-size: 1.2em;
+	width: 100%;
+	padding: 2px;
+	margin: 0;
+}
+.gallery-links h2{
+	font-family:'Bahnschrift Condensed';
+	font-size: 2.1em;
+	font-weight: 600;
+	color:  #cc0052;
+	width:50%;
+	margin-top:1em;
+	padding-left:1em;
+	padding-top:.5em;
+	margin-bottom:0.2em;
+	
+}
+.gallery-container a{
+	 display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+	clear: both;
+}
+.gallery-container a{
+	padding: 1em 2%; 
+}
+.gallery-container a:hover {
+	 	opacity: .8;
+}
+.gallery-container a div {
+	width: 100%;
+	height:42em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.gallery-container a h3{
+	font-family:'Bahnschrift Condensed';
+	font-size: 1em;
+	width:99%;
+	text-decoration: none;
+	border-bottom: 1px solid #ffe6f0;
+	padding-bottom:1em;
+	color:#d9d9d9;
+}
+
+/* The Modal (background) */
+#myBtn{
+  background-color:white;/*#d9d9d9;  Green */
+  border:1px solid #cc0052;
+  color: #cc0052;
+  padding:0px 10px;
+  float: right;
+  margin-right:1em;
+  margin-top:.5em;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 35px;
+  border-radius:1em;
+} 
+#myBtn-gallery{
+	color:#cc0052 ;
+	
+  	text-decoration: none;
+	display:inline-block;
+	clear: both;
+}
+#myBtn-gallery i.material-icons{
+  	font-size:28px;
+  	margin: auto;
+  	padding: 0;	
+}
+#myBtn-post-gallery{
+	background-color: #bf4080;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
+.album-comment{
+	font-family:'Bahnschrift Condensed';
+	font-size: 1em;
+	margin:10px 10px;
+	color:black;
+}
+
+
+.modal, .modal2{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  text-align: center;
+  padding: 2em;
+  max-width: 50%;
+  min-height:500px;
+}
+.modal-content form{
+	width:100%;
+	min-height:100%;
+}
+.modal-content h1{
+	margin-bottom:1em;
+}
+
+/* The Close Button */
+.close {
+  color: #cc0052;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-comment form{
+	width: 100%;
+}
+.container-comment textarea{
+	border-radius: .5em ; 
+	width: 97%;
+	margin:1px auto;
+	background-color: white;
+	resize: none;
+	padding: 1em;
+	border: .5px solid #b3b3b3;
+	font-family:'Bahnschrift Condensed';
+}
+
+.button-comment{
+	width: 80px;
+	height: 30px;
+	margin: .5em;
+	font-family:'Bahnschrift Condensed';
+	text-decoration: none;
+	color: white;
+	background:#bf4080; 
+	padding: 0 10% 0 10%;
+	text-align: center;
+	clear: both;
+	border-radius: 1em;
+	border: 1px solid #bf4080 ;
+}
+
+.container p{
+	font-family:'Bahnschrift Condensed';
+}
+
+/*
+.inputfile {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+/*
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+*/
+/**-----------------------------------------------------------------------------------------*/
+
+li{
+	display: inline;
+	padding-left: 1em;
+}
+li i {
+	text-decoration:none;
+	font-family:'Bahnschrift Condensed';
+	font-size: 1.5em;
+}
+
+header nav form button i.material-icons{
+	font-size: 30px;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~About me settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.aside-aboutme {
+  float: left;
+  margin-top: .5em;
+  width: 30%;
+  max-height: 600px;
+  padding-top: 1em;
+  background-color:white ;
+  border-radius: .4em;
+}
+.aside-aboutme  ul{
+	font-family:'Bahnschrift Condensed';
+	background-color:white;  
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+	padding: 1em;
+}
+.aside-aboutme  ul li{
+	display: inline-block;
+	padding:1em;
+	width: 80%;
+	border-bottom:.1px solid #bf4080;
+}
+.aside-aboutme  ul a{	
+	text-decoration: none;
+	color: #bf4080;
+	float:left;
+
+}
+
+.article-aboutme, .article-password {
+	float: right;
+	border-radius: .4em;
+	margin-top: .5em;
+	width: 69%;
+	min-height: 600px;
+	background: white;
+	position: relative;
+}
+.article-aboutme h1, .article-password h1{
+	font-family:'Bahnschrift Condensed';
+	margin: 1em 0 0 1em;
+	float:left;
+	font-size: 2em;
+	color: #bfbfbf;
+	
+}
+.article-aboutme table{
+	clear:both;
+	font-family:'Bahnschrift Condensed';
+  	border-collapse: collapse;
+  	margin: 2em;
+  	width: 90%;
+
+ }
+
+td{
+  text-align: left;
+  color: #bf4080;
+  padding: 3px 0px 1px 1px;
+  border-bottom: .5px solid #f2f2f2;
+} 
+td p{
+	color: #a6a6a6;
+}
+th a {
+	float: right;
+	background-color:white;/*#d9d9d9;  Green */
+  border:1px solid #cc0052;
+  color: #cc0052;
+  padding:2px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 35px;
+  border-radius:1em;
+}
+.bg-modal-aboutme{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents-aboutme{
+	min-height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	z-index: 2;
+	position: absolute;
+	border-radius: 4px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.modal-contents-aboutme form{
+	width: 100%;
+	align-content: center;
+	clear: both;
+	margin-top: 1em;
+	color:#ff80b3;
+}
+.modal-contents-aboutme input[type=text], input[type=email],
+ input[type=password], input[type=date], input[type=textarea],
+ textarea{
+	padding: .7em 1%;
+	border: 1px solid #faeaf5;
+	border-radius: 6px;
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	margin: 1em .3em;
+}
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Reset password settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.bg-modal-password{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modal-contents-password{
+	min-height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	z-index: 2;
+	position: absolute;
+	border-radius: 4px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.article-password form{
+	clear:both;
+	font-family:'Bahnschrift Condensed';
+  	border-collapse: collapse;
+  	margin: 2em;
+  	width: 90%;
+ }
+ .article-password button{
+	background-color:white;/*#d9d9d9;  Green */
+  border:1px solid #cc0052;
+  color: #cc0052;
+  padding:2px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  border-radius:1em;
+}
+ }
+.modal-contents-password form{
+	width: 100%;
+	align-content: center;
+	clear: both;
+	margin-top: 1em;
+	color:#ff80b3;
+}
+#MyForm{
+	display: none;
+    width: 90	%;
+
+    padding: 14px;
+ 
+}	
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Chat List friends settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+#chatbox{
+	width: 95%;
+	background-color: rgb(244,223,234);
+	padding-top: 1em;
+	margin: 0;
+}
+#chatbox p{
+	margin: 1em auto;
+	padding-left: 25%;
+	font-family:'Bahnschrift Condensed';
+}
+button.btn-chatbox{
+  background-color:#cc0052;/*#d9d9d9;  Green */
+  border:1px solid #cc0052;
+  color: white ;
+  padding:10px 15px;
+  float: left;
+  margin-right:1em;
+  margin-top:.5em;
+  text-align: center;
+  font-size: 10px;
+  border-radius:1em;
+}
+
+.form-chatbox textarea{
+	border-radius: 1em ; 
+	width: 100%;
+	margin: 0;
+	background-color: white;
+	resize: none;
+	padding: 1em;
+	border: 1px solid #b3b3b3;
+	font-family:'Bahnschrift Condensed';
+}
+.chat-image-user{
+	border-radius: 15em;
+	float: left;
+	padding: 0.5em;
+	position: relative;
+	bottom: 30px;
+}
+.chat-username{
+	font-size: 1.4em;
+	text-decoration:none;		 
+	color:black;
+	font-family:'Bahnschrift Condensed';
+	margin-top: 2.2em;
+}
+#chatbox .material-icons{
+	color: #bf4080;
+	text-decoration: none;
+	cursor: pointer;
+    bottom: 30px;
+    left: 1 1em;
+}
+.chatbox-left{
+	float: left;
+	width: 95%;
+	padding: 0;
+	color:white;
+	margin:5px 1em; 
+
+}
+.chatbox-right{
+	float: right;
+	width: 95%;
+	padding: 0;
+	color: white;
+	margin:5px 1em; 
+}
+.chatbox-username-right{
+	float: right;
+	font-size: 1.2em;
+	color: black;
+	font-family:'Bahnschrift Condensed';
+	padding: 1px;
+	margin-right: 1.2em;
+}
+.chatbox-time-left{
+	float: left;
+	clear:both;
+	font-size:5px;
+	font-family:'Bahnschrift Condensed';
+	color: black;
+	padding: 0;
+	margin-left: 5.1em;
+}
+.chatbox-time-right{
+	float: right;
+	clear:both;
+	font-size:5px;
+	font-family:'Bahnschrift Condensed';
+	color: black;
+	padding: 0;
+	margin-right: 5.1em;
+}
+.chatbox-username-left{
+	float: left;
+	font-size: 1.2em;
+	font-family:'Bahnschrift Condensed';
+	padding: 1px;
+	color: black;
+	margin-left: 1.2em;	
+}
+.chatbox-msg-right{
+	float: right;
+	font-size: 1em;
+	font-family:'Bahnschrift Condensed';
+	background:#ff99c2; 
+	border-radius: 20em;
+	padding: 0px 15px;
+	text-align: right;
+	border-radius: 8em;
+}
+p.chatbox-msg-right {
+	padding: 4px;
+}
+.chatbox-msg-left{
+	float: left;
+	font-size: 1em;
+	font-family:'Bahnschrift Condensed';
+	margin: 2px;
+	background: #9999ff;
+	padding:2px 15px;
+	border-radius: 20em;
+}
+
+
+
+
+.aside-messager{
+	float: left;
+  margin-top: .5em;
+  width: 30%;
+  max-height: 600px;
+  padding-top: 1em;
+  background-color:white ;
+  border-radius: .4em;
+}
+
+.home-friends-list{
+  clear: both;
+  margin-top: 0.8em;
+  background: white ;
+  border-radius: .4em;
+  padding: 5%;
+}
+.home-friends-list p{
+	padding: 1em;
+	font-size: .5em;
+}
+.home-image-friends{	
+	width: 60px;
+	height: 60px;
+	padding: 0.5em 10px;
+	margin: 1px;
+	border-radius: 15em;
+	
+}
+
+.table-chat td{
+	width: 100%;
+	text-align: left;
+}
+.table-chat .home-table-image{
+	width: 20%;
+}
+.home-table-friends-name  {
+	text-decoration: none;
+	color: #bf4080;
+	margin: 10%;
+	width: 100%;
+	float: left;
+	padding: 1px;
+}
+.home-table-friends-name a:hover{
+	font-size: .5em;
+}
+/*Error messages*/
+.err{
+	color: red;
+    font-size: 0.8em;
+	margin-left: 2em;
+    margin-top: 0;
+}

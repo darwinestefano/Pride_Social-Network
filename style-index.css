@@ -1,0 +1,117 @@
+/*~~~~~~~Set default for all pages /*~~~~~~~*/
+body{
+	margin: 0 auto;
+	background-color:#f2f2f2;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  width: 100%;
+  height: 100%;
+}
+h1{
+	font-family:'Bahnschrift Condensed';
+	color:  black;
+	font-size: 1.8em;
+	text-align: center;
+}
+h3{
+	font-family:'Libre Franklin', sans-serif;
+	color:  white;
+	font-size: .9em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#page {
+	width: 960px;
+	font-family:'Libre Franklin', sans-serif;
+	margin: 0 auto;
+	color: #737373;
+	padding: 0em 0% 0em 0%;
+}
+/*~~~~~~~Edit forms/*~~~~~~~*/
+form{
+	width:100%;
+}
+
+input[type=email], input[type=text], input[type=date], select{
+	width: 100%;	
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 2em;
+	box-sizing: border-box;
+}
+
+input[type=password], select{
+	width: 100%;	
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 2em;
+	box-sizing: border-box;
+	resize: vertical;
+}
+input{
+	padding: 1em 1%;
+	margin: 1.5em;
+}
+
+input[type=submit]{
+	background-color:/*#b34700*/ #bf4080;
+	font-size:1em;
+	width: 100%;
+	font-family:'Bahnschrift Condensed';
+	color: white;
+	padding: 1em 1%;
+	border: none;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #4d4d4d;
+}
+table{
+	background-color: white;
+	border-radius: 3em;
+	border: 1px solid white;
+	margin: 1em 0;
+	width: 100%;
+}
+.th-logo{
+	padding:0 0;
+	margin: 3em 1%;
+}
+.td-login{
+	padding:0em 5% 2em 5%;
+	margin: 3em 1%;
+	width: 40%
+}
+th{
+	color: black;
+	font-size: 1.25em;
+	cursor: pointer;
+	text-align: left;
+	padding: 1em 2%;
+	margin: 3em 1%;
+}
+a{
+	text-decoration: none;
+}
+td {
+	padding:0.5em 5%;
+	width: 40%;
+}
+td a{
+	color: #4d4d4d;
+	display: inline-block;
+}
+/*Error messages*/
+.err{
+	color: red;
+    font-size: 0.8em;
+	margin-left: 2em;
+    margin-top: 0;
+}

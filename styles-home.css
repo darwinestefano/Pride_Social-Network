@@ -1,0 +1,695 @@
+/*set default all pages*/
+body{
+	margin: 0;
+	background-color: #f2f2f2;
+	font-family: 'Bahnschrift Condensed';
+}
+.profile-page{
+	width: 960px;
+	margin: 0 auto;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Header setting/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+#pride-header{
+	width: 100%;
+	height: 2.8em;
+	background-color: #bf4080; 			
+	margin: 0;
+}
+#pride-header nav{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#pride-header nav img{
+	padding: 0.5% 0 0.5% 0;
+}
+#pride-header img{
+	float: left;
+	display: block;
+}
+#pride-header form{
+	float: right;
+	width: 70%;
+}
+#pride-header input[type=text]{
+	float: left;
+	margin-left:80px;
+	padding: .5em 1%;
+	border: 1px solid #bf4080;
+	border-radius: 6px;
+	box-sizing: border-box;
+	width: 74%;
+	margin-top:2px;
+	cursor: pointer;
+}
+#pride-header button{
+	background-color:#bf4080;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+#pride-header form i.material-icons{
+	font-size: 2.1em;
+	position: relative;
+	top: 5px;
+	left: 50%;
+}
+.menu-dropdown{
+	float: right;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  font-family:'Bahnschrift Condensed';
+  padding: 1em 4%;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.menu-dropdown:hover .dropdown-content {
+	display: block;
+}
+.menu-dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+.menu-dropdown i.material-icons{
+	/*padding: 2% auto;*/
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    top: 12px;
+    left: -0.5em;
+}
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Home settings --> Left side /*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.home-left{
+	float: left;
+	width: 30%;
+}
+.aside-home{
+	margin-top: .5em;	
+	background-color: white; 
+	padding-top: 2em;
+	max-height: 600px;
+	border-radius: .4em;
+}
+.aside-home h1{
+	font-family:'Bahnschrift Condensed';
+	color: #bf4080;
+	margin:0;	
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	clear: both;
+	padding-top:.5em;
+	padding-bottom: .4em;
+}
+.aside-home ul{
+	font-family:'Bahnschrift Condensed';
+	background-color:#bf4080; 
+	list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 1em;  
+}
+.aside-home ul li{
+	display: inline;
+	padding:0;
+}
+.aside-home ul a{	
+	text-decoration: none;
+	color: white;
+}
+.home-profile-link{
+	position: relative;
+	font-size: 1.2em;
+    bottom: 0.5em;
+}
+.home-notification .material-icons, .home-friends .material-icons{
+	font-size: 2em;	
+	padding-left: 15%;
+}
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~Home-profile picture settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+#imgContainer {
+	width: 100%;
+	text-align: center;
+}
+.user-container {
+	display: inline-block;
+	height: 90%;
+	position: relative;
+	background-color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 15em;
+
+}
+.user-container img {
+	border-radius: 15em;
+	outline: medium none;
+	vertical-align: middle;
+	width: 100%;
+}
+.user-container div {
+	float: left;
+}
+
+.user-container:hover  .image{
+	  opacity: 0.8;
+}
+.containerImg{
+	width: 260px;
+	height: 260px;
+}
+.containerImg:hover .middle {
+  opacity: 1;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  background-color: #cc0052;
+  border:0px solid #cc0052;
+  color: white;
+  border-radius: .8em;
+  font-size: 1em;
+  padding: 1em 16%;
+
+}
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -2em;
+	left:0;
+	z-index: 2;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modal-contents2 {
+	min-height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+	border: .5px solid #f2f2f2;  
+}
+.modal-contents2 form{
+	width: 100%;
+	align-content: center;
+		clear: both;
+			margin-top: 1em;
+}
+.close {
+	position: absolute;
+	top: 0;
+	clear:both;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}
+}
+#blah{
+	border-radius: 15em;
+	height: 288px;
+    width: 288px;
+}
+
+.modal-contents2 [type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 80%;
+  display:none;
+}
+
+.modal-contents2 [type="file"] + label {
+	  background: #f0c1e1;
+	  border: none;
+	  border-radius: 5px;
+	  color: #fff;
+	  cursor: pointer;
+	  display: block;
+	  font-family: 'Bahnschrift Condensed';
+	  font-size: inherit;
+	  font-weight: 600;
+	  width: 50%;
+  	  margin: 1em auto;
+	  outline: none;
+	  padding: 1rem 50px;
+	  position: relative;
+	  transition: all 0.3s;
+	  vertical-align: middle;
+ 
+	&:hover {
+    background-color: darken(#f15d22, 10%);
+  }
+  
+  &.btn-3 {
+    background-color: #f79159;
+    box-shadow: 0 6px darken(#f79159, 10%);
+    transition: none;
+
+    &:hover {
+      box-shadow: 0 4px darken(#f79159, 10%);
+      top: 2px;
+    }
+  }
+}
+
+.button {
+	background-color: #bf4080;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		background-color: white;
+		color: blue;
+		border: 2px solid #bf4080;		
+	}
+	 &:hover {
+      background-color: darken(#ee6d9e, 30%);
+      
+	 span {
+		transform: translateY(300%);
+	  }
+		
+	  &::before {
+		top: 0;
+	  }
+	}
+}
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ List of friends settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.home-friends-list{
+  clear: both;
+  margin-top: 0.8em;
+  background: white ;
+  border-radius: .4em;
+  padding: 5%;
+}
+.home-friends-list p{
+	padding: 1em;
+}
+.home-image-friends{	
+	width: 70%;
+	border-radius: 5em;
+}
+.home-friends-list .home-table-image{
+	width: 35%;
+	padding: 0.5em 0;
+}
+.home-friends-list .home-table-friends-name{
+	text-align: left;
+	margin: 5%;
+}
+.home-table-friends-name a{
+	text-decoration: none;
+	color: black;
+}
+.home-table-friends-name a:hover{
+	font-size: 1.1em;
+}
+
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Home settings --> Right side /*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.home-right{		
+	float: right;
+	width: 69%; 
+}
+/*Post Feeds (text and image)*/
+.home-post{
+	margin-top: 1%;
+	background-color: white;
+	border-radius: .4em;
+}
+.home-post form{
+	margin-left: 12%;
+    margin-right:12%;
+    width: 75%;
+    padding-bottom: 2em;
+}
+.home-post form textarea{
+	border-radius: 1em;
+    width: 100%;
+    margin-top: 10%;
+    height: 90px;
+    background-color: white;
+    resize: none;
+    padding: 2em;
+    border: 1px solid #b3b3b3;
+    font-family: 'Bahnschrift Condensed';
+}
+.home-post form .button-post-feed{
+	width: 60px;
+	height: 30px;
+	margin: .5em;
+	font-family:'Bahnschrift Condensed';
+	text-decoration: none;
+	color: white;
+	background:#bf4080; 
+	padding: 0;
+	text-align: center;
+	clear: both;
+	border-radius: 1em;
+	border: 1px solid #bf4080 ;
+}
+.home-post form .button-attach-file{
+	color: #bf4080;
+	font-size: 2.2em;
+   	position: relative;
+    top: 0.3em;
+	background: transparent;
+	opacity: 0.7;
+	cursor: pointer;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Display feed settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.home-feeds{
+	width: 100%;
+	clear: both;
+	float: right;	
+	border-radius: .4em;
+	margin-top: 2em;
+}
+.home-feeds .delete-button, .edit-button{
+	float: right;
+	color: #bf4080; 
+	background: transparent;
+	opacity: 0.7;
+	border: none;
+	cursor: pointer;
+	margin: 5% 2% 0 0;
+}
+
+#display-feeds{	
+	background-color: white;
+	padding: 2em 5%;
+	margin-bottom: 1em;
+}
+#feed-header{
+	width: 100%;	
+}
+.feed-image-user{
+	border-radius: 15em;
+	outline: medium none;
+	vertical-align: middle;
+	float: left;
+}
+#feed-username{
+	font-family:'Bahnschrift Condensed';
+	font-size: 1.5em;
+	text-decoration:none;		 
+	border-bottom: 1px solid  #ffe6f0;
+	color:black;
+	margin-left: 15%;
+}
+.feed-date{
+	color: #909090;
+	padding-left: 15%;
+}
+.feed-post{
+	font-size: 1.5em;
+	padding: 1em 2% 0.5em 2%;	
+}
+.feed-img{
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+#feed-footer{	
+	border-top: 1px solid  #ffe6f0;
+	
+}
+.myBtn{
+	color: #bf4080; 
+	background: transparent;
+	opacity: 0.7;
+	border: none;
+	margin: 2em 2% 0 0;
+	cursor: pointer;
+}
+.myBtn .material-icons{
+	font-size: 2em;
+}
+.feed-list-friends{
+	color: #bf4080;
+	font-size: 1.2em;
+	position: relative;
+	right: 18px;
+    bottom: 20px;
+	cursor: pointer;
+}
+#uploadPost{
+	display: none;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Modal to delete/edit feeds settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.modal-title{
+	font-family:'Bahnschrift Condensed';
+	font-size: 2em;
+	color: #bf4080;
+}
+.modal-body{
+	font-family:'Bahnschrift Condensed';
+	font-size: 1.5em;
+	padding: 1em 5%;
+}
+.modal-footer{
+	height: 60px;
+}
+.modal-footer .delete-button{
+	width: 60px;
+	height: 35px;
+	margin: .5em;	
+	background:#bf4080; 
+	padding: 0;
+	clear: both;
+	border-radius: 0.4em;
+	border: 1px solid #bf4080 ;
+	position: relative;
+	bottom: 0.5em;
+}
+.modal-footer .delete-button a{
+	text-decoration: none;
+	color: white;	
+	text-align: center;
+}
+.delete-button:hover{
+	color: #d8257f;
+	opacity: 1;
+}
+.edit-button:hover{
+	color: #d8257f;
+	opacity: 1;
+}
+.modal-body form{
+	margin: 0 auto;
+    width: 100%;
+}
+.modal-body form textarea{
+	border-radius: 2em;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    resize: none;
+    padding: 2em;
+    border: 1px solid #bf4080;
+    font-family: 'Bahnschrift Condensed';
+}
+.modal-body form .button-post-feed{
+	width: 60px;
+	height: 30px;
+	margin: .5em;
+	font-family:'Bahnschrift Condensed';
+	text-decoration: none;
+	color: white;
+	background:#bf4080; 
+	padding: 0;
+	text-align: center;
+	clear: both;
+	border-radius: 1em;
+	border: 1px solid #bf4080 ;
+	font-size: 0.7em;
+}
+.button-post-feed:hover{
+	opacity: 0.5;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Feed comments settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.comment{
+	display:none;
+	margin-top: 1.5em;	 
+}
+.comment form{
+	width: 100%;
+	margin-top: 2em;
+}
+.comment textarea{
+	border-radius: .5em ; 
+	width: 80%;
+	margin:3px;
+	height: 80px;
+	background-color: white;
+	resize: none;
+	padding: 1.5em;
+	border: 0.5px solid #b3b3b3;
+	font-family:'Bahnschrift Condensed';
+}
+.button-comment{
+	width: 60px;
+	height: 30px;
+	margin: .5em;
+	font-family:'Bahnschrift Condensed';
+	text-decoration: none;
+	color: white;
+	background:#bf4080; 
+	padding: 0;
+	text-align: center;
+	clear: both;
+	border-radius: 1em;
+	border: 1px solid #bf4080 ;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Display Comments settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.container{
+	width: 80%;
+	border-bottom : 2px solid #ebc6d9;
+	background-color: white;
+	border-radius: .8em;
+	padding: 1em;
+	margin: 1em .2em;
+	clear: both;
+	position: relative;
+}
+.container .comment-image-user{
+	border-radius: 5em;
+}
+.container .comment-username{
+	padding-left: 1em;
+}
+.container .comment-date{
+	float: right;
+	font-size: 0.8em;	
+}
+.container .comment-message{
+	padding: 1em 5% 0.5em 12% ;
+	font-size: 1.2em;
+	margin: 0;
+}
+/**-----------------------------------------------------------------------------------------*/
+/*~~~~~~~ Search Page settings/*~~~~~~~*/
+/**-----------------------------------------------------------------------------------------*/
+.search-results{
+	width: 100%;
+	margin: 1% auto;
+	padding-bottom: 2em;
+	background-color: white;
+	border-radius: .4em;
+}
+.search-message{
+	color: #666666;
+	font-size: 2em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10;
+	margin: 0 auto;
+}
+.search-total{
+	color: #666666;
+	font-size: 2em;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1.5em 0;
+}
+.search-list{
+	padding: 1em 5%;
+	border: 1px solid #b3b3b3;
+	border-radius: 3em;
+	margin: 1em 5%;
+}
+.search-image-friends{	
+	border-radius: 5em;
+}
+.search-username{
+	padding-left: 2em;
+}
+.search-username a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.5em;
+}
+.search-username a:hover{
+	color: #bf4080;
+}
+.myBtn-add, .myBtn-done{
+	float: right;
+	background: transparent;
+	opacity: 0.7;
+ 	border: none;
+  	color: #bf4080; 
+ 	font-size: 2em;
+	position: relative;
+	top: 1.2em;
+}
+.myBtn-add .material-icons{
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
